@@ -12,6 +12,7 @@ java {
 dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.kotlin.allopen.gradlePlugin)
+    compileOnly(libs.springBoot.gradlePlugin)
 }
 
 gradlePlugin {
@@ -27,6 +28,10 @@ gradlePlugin {
         register("springBoot") {
             id = "build.logic.convention.springboot"
             implementationClass = "SpringBootConventionPlugin"
+        }
+        register("springBootWeb") {
+            id = "build.logic.convention.springboot.web"
+            implementationClass = "SpringBootWebConventionPlugin"
         }
         register("springBootJpa") {
             id = "build.logic.convention.springboot.jpa"
