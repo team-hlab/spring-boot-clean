@@ -20,6 +20,10 @@ dependencyResolutionManagement {
 include(":api")
 include(":datasource:jpa")
 
-include(":library:monitoring")
+// library
+include(
+    ":library:logging",
+    ":library:monitoring",
+)
 
 rootProject.name = "SpringBoot-Clean"

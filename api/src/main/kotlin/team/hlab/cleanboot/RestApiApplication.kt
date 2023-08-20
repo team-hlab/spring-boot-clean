@@ -1,4 +1,4 @@
-package team.hlab
+package team.hlab.cleanboot
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan
